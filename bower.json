@@ -1,13 +1,13 @@
 {
-  "name": "i3g-component",
+  "name": "i3g-template-loader",
   "version": "0.1",
   "description": "",
   "keywords": [
 	"i3g"
   ],
   "main": [
-	"dist/scss/i3g-component.scss",
-	"dist/js/i3g-component.js"
+	"dist/scss/i3g-template-loader.scss",
+	  "dist/js/i3g-template-loader.js"
   ],
   "ignore": [
 	"docs",

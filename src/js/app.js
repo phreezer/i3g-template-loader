@@ -1,16 +1,14 @@
-'use strict';
-/*jshint indent:4 */
-
 (function ($) {
+	'use strict';
+	/*jshint indent:4 */
 
-	$.serviceTemplateLoader = function() {
+	$.serviceTemplateLoader = function () {
 
-		var serviceTemplateLoader = {};
-		var config = {};
-		var defaults = $.app.config;
-		var cached = null;
-		var $scope = {};
-
+		var serviceTemplateLoader = {},
+			config = {},
+			defaults = $.app.config,
+			cached = null,
+			$scope = {};
 
 
 
@@ -21,34 +19,6 @@
 		}
 
 
-		function update(scope, options) {
-			config = getConfig(defaults, options);
-			$scope = scope || {};
-
-			config.TEMPLATE ? cached = config.TEMPLATE : false;
-
-			var deferred = Q.defer();
-			if(cached === null) {
-				deferred.resolve( getData() );
-			} else {
-				deferred.resolve( renderHTML(cached) );
-			}
-			deferred.resolve( getData() );
-			return deferred.promise;
-		}
-
-
-		function getData() {
-			var deferred = Q.defer();
-
-			$.get( config.TEMPLATE_URL, function( data ) {
-				cached = data;
-				deferred.resolve( renderHTML(data) );
-			});
-
-			return deferred.promise;
-		}
-
 
 		function renderHTML(data) {
 			data = data || '';
@@ -58,12 +28,40 @@
 		}
 
 
+		function getData() {
+			var deferred = Q.defer();
+
+			$.get(config.TEMPLATE_URL, function (data) {
+				cached = data;
+				deferred.resolve(renderHTML(data));
+			});
+
+			return deferred.promise;
+		}
 
 
-		serviceTemplateLoader.update = update
+
+		function update(scope, options) {
+			config = getConfig(defaults, options);
+			$scope = scope || {};
+
+			config.TEMPLATE = config.TEMPLATE ? cached = config.TEMPLATE : false;
+
+			var deferred = Q.defer();
+			if (cached === null) {
+				deferred.resolve(getData());
+			} else {
+				deferred.resolve(renderHTML(cached));
+			}
+			deferred.resolve(getData());
+			return deferred.promise;
+		}
+
+
+		serviceTemplateLoader.update = update;
 
 		return serviceTemplateLoader;
-	}
+	};
 
 
 }(jQuery));
