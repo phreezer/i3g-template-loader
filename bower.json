@@ -2,12 +2,16 @@
   "name": "i3g-template-loader",
   "version": "0.1",
   "description": "",
+	"authors": [
+		{ "name": "i3Global", "email": "media@i-3global.com", "homepage": "http://i-3global.com" },
+		{ "name": "Marcus Heath Showalter", "email": "heath.showalter@i-3global.com", "homepage": "http://heathshowalter.com" }
+	],
   "keywords": [
 	"i3g"
   ],
   "main": [
 	"dist/scss/i3g-template-loader.scss",
-	  "dist/js/i3g-template-loader.js"
+	"dist/js/i3g-template-loader.js"
   ],
   "ignore": [
 	"docs",
@@ -19,7 +23,8 @@
 	"package.json",
 	"README.md"
   ],
-  "license": "MIT",
+	"private": true,
+	"license": "UNLICENSED",
   "devDependencies": {
 	"jquery": "~1.11.0",
 	"json3": "~3.3.1",

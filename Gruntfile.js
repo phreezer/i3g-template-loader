@@ -2,9 +2,9 @@ module.exports = function (grunt) {
 
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-		appName: 'i3g Template Loader',
-		jsFileName: 'jquery.<%= pkg.name %>',
-		cssFileName: 'i3g.template-loader',
+		appName: '<%= pkg.name %>',
+		jsFileName: '<%= pkg.name %>',
+		cssFileName: '<%= pkg.name %>',
 		banner: '/*!\n' +
 			'* <%= pkg.name %> - v<%= pkg.version %>\n' +
 			'* Homepage: <%= pkg.homepage %>\n' +
