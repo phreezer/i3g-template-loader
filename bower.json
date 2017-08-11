@@ -1,19 +1,26 @@
 {
-  "name": "i3g-template-loader",
-  "version": "0.1",
-  "description": "",
+	"name": "i3g-template-loader",
+	"version": "0.1.1",
+	"description": "",
 	"authors": [
-		{ "name": "i3Global", "email": "media@i-3global.com", "homepage": "http://i-3global.com" },
-		{ "name": "Marcus Heath Showalter", "email": "heath.showalter@i-3global.com", "homepage": "http://heathshowalter.com" }
+		{
+			"name": "i3Global",
+			"email": "media@i-3global.com",
+			"homepage": "http://i-3global.com"
+		},
+		{
+			"name": "Marcus Heath Showalter",
+			"email": "heath.showalter@i-3global.com",
+			"homepage": "http://heathshowalter.com"
+		}
 	],
-  "keywords": [
+	"keywords": [
 	"i3g"
   ],
-  "main": [
-	"dist/scss/i3g-template-loader.scss",
-	"dist/js/i3g-template-loader.js"
+	"main": [
+	"dist/js/jquery.i3g-template-loader"
   ],
-  "ignore": [
+	"ignore": [
 	"docs",
 	"examples",
 	"libs",
@@ -25,12 +32,12 @@
   ],
 	"private": true,
 	"license": "UNLICENSED",
-  "devDependencies": {
-	"jquery": "~1.11.0",
-	"json3": "~3.3.1",
-	"es5-shim": "~3.1.0",
-	"bootstrap-sass-official": "~3.3.6",
-	"q": "~1.0.1",
-	"html5shiv": "~3.7.3"
-  }
+	"devDependencies": {
+		"jquery": "~1.11.0",
+		"json3": "~3.3.1",
+		"es5-shim": "~3.1.0",
+		"bootstrap-sass-official": "~3.3.6",
+		"q": "~1.0.1",
+		"html5shiv": "~3.7.3"
+	}
 }
