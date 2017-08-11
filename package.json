@@ -1,11 +1,9 @@
 {
 	"name": "i3g-template-loader",
 	"description": "Injects HTML Templates",
-	"version": "0.0.2",
+	"version": "0.3.0",
 	"homepage": "http://i-3global.com",
-	"main": "./dist/js/i3g-template-loader.js",
-	"style": "./dist/scss/i3g-template-loader.scss",
-	"sass": "./dist/scss/i3g-template-loader.scss",
+	"main": "./dist/js/jquery.i3g-template-loader.js",
 	"author": {
 		"name": "Heath Showalter",
 		"url": "http://heathshowalter.com/"
