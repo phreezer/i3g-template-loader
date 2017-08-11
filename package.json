@@ -1,7 +1,7 @@
 {
 	"name": "i3g-template-loader",
 	"description": "Injects HTML Templates",
-	"version": "0.3.0",
+	"version": "0.3.1",
 	"homepage": "http://i-3global.com",
 	"main": "./dist/js/jquery.i3g-template-loader.js",
 	"author": {

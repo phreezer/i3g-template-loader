@@ -1,6 +1,6 @@
 {
 	"name": "i3g-template-loader",
-	"version": "0.3.0",
+	"version": "0.3.1",
 	"description": "",
 	"authors": [
 		{
@@ -18,7 +18,7 @@
 	"i3g"
   ],
 	"main": [
-	"dist/js/jquery.i3g-template-loader"
+		"dist/js/jquery.i3g-template-loader.js"
   ],
 	"ignore": [
 	"docs",
